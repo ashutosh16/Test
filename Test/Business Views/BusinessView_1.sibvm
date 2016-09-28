@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BVMRoot xmlns="http://bvm/1.0">
+  <Name valueType="Const">
+    <Value><![CDATA[BusinessView_1]]></Value>
+  </Name>
+  <RefreshConfiguration>
+    <EsriRefreshConfiguration>
+      <AllowManualRefresh valueType="Const">
+        <Value><![CDATA[true]]></Value>
+      </AllowManualRefresh>
+      <PeriodicRefresh use="false">
+        <RefreshRate valueType="Const">
+          <Value>
+            <Value>2</Value>
+            <Units>Minutes</Units>
+          </Value>
+        </RefreshRate>
+      </PeriodicRefresh>
+      <AutoZoomMapFeatures valueType="Const">
+        <Value><![CDATA[true]]></Value>
+      </AutoZoomMapFeatures>
+      <RestrictDataToViewPort valueType="Const">
+        <Value><![CDATA[false]]></Value>
+      </RestrictDataToViewPort>
+      <LassoRefresh valueType="Const">
+        <Value><![CDATA[true]]></Value>
+      </LassoRefresh>
+      <AllowLassoFilterOverride valueType="Const">
+        <Value><![CDATA[true]]></Value>
+      </AllowLassoFilterOverride>
+      <EsriCameraRefresh use="false"/>
+    </EsriRefreshConfiguration>
+    <GeoMapRefreshConfiguration>
+      <AllowManualRefresh valueType="Const">
+        <Value><![CDATA[true]]></Value>
+      </AllowManualRefresh>
+      <PeriodicRefresh use="false">
+        <RefreshRate valueType="Const">
+          <Value>
+            <Value>2</Value>
+            <Units>Minutes</Units>
+          </Value>
+        </RefreshRate>
+      </PeriodicRefresh>
+      <AutoZoomMapFeatures valueType="Const">
+        <Value><![CDATA[true]]></Value>
+      </AutoZoomMapFeatures>
+      <RestrictDataToViewPort valueType="Const">
+        <Value><![CDATA[false]]></Value>
+      </RestrictDataToViewPort>
+      <LassoRefresh valueType="Const">
+        <Value><![CDATA[true]]></Value>
+      </LassoRefresh>
+      <AllowLassoFilterOverride valueType="Const">
+        <Value><![CDATA[true]]></Value>
+      </AllowLassoFilterOverride>
+      <GeoMapCameraRefresh use="false"/>
+    </GeoMapRefreshConfiguration>
+    <NoMapRefreshConfiguration>
+      <AllowManualRefresh valueType="Const">
+        <Value><![CDATA[true]]></Value>
+      </AllowManualRefresh>
+      <PeriodicRefresh use="false">
+        <RefreshRate valueType="Const">
+          <Value>
+            <Value>2</Value>
+            <Units>Minutes</Units>
+          </Value>
+        </RefreshRate>
+      </PeriodicRefresh>
+    </NoMapRefreshConfiguration>
+  </RefreshConfiguration>
+  <BusinessViewSubmenu>
+    <BusinessViewToolbarSettings>
+      <EnableDataFilter valueType="Const">
+        <Value><![CDATA[false]]></Value>
+      </EnableDataFilter>
+      <EnableTimeFilter valueType="Const">
+        <Value><![CDATA[false]]></Value>
+      </EnableTimeFilter>
+    </BusinessViewToolbarSettings>
+  </BusinessViewSubmenu>
+  <DataFilterWindow Id="businessview_1_datafilter">
+    <WindowTitle valueType="Const">
+      <Value><![CDATA[Data Filter]]></Value>
+    </WindowTitle>
+    <ShowBreadcrumbsInTitle valueType="Const">
+      <Value><![CDATA[true]]></Value>
+    </ShowBreadcrumbsInTitle>
+    <HideFromBusinessViewSubMenu valueType="Const">
+      <Value><![CDATA[false]]></Value>
+    </HideFromBusinessViewSubMenu>
+    <IsLoadByDefault valueType="Const">
+      <Value><![CDATA[false]]></Value>
+    </IsLoadByDefault>
+    <WindowPlugin>
+      <ComponentPlugin>
+        <Name valueType="Const">
+          <Value><![CDATA[siViewerDataFilter]]></Value>
+        </Name>
+        <JSFile valueType="Const">
+          <Value>dataFilter/com.spacetimeinsight.viewer.ui.dataFilter</Value>
+        </JSFile>
+      </ComponentPlugin>
+      <ToolbarPlugin>
+        <Name valueType="Const">
+          <Value><![CDATA[siViewerWindowToolBar]]></Value>
+        </Name>
+        <JSFile valueType="Const">
+          <Value>common/com.spacetimeinsight.viewer.ui.windowToolBar</Value>
+        </JSFile>
+      </ToolbarPlugin>
+      <FooterPlugin>
+        <Name valueType="Const">
+          <Value><![CDATA[siViewerFooter]]></Value>
+        </Name>
+        <JSFile valueType="Const">
+          <Value>common/com.spacetimeinsight.viewer.ui.footer</Value>
+        </JSFile>
+      </FooterPlugin>
+    </WindowPlugin>
+    <RefreshConfiguration>
+      <EsriRefreshConfiguration>
+        <AllowLassoFilterOverride valueType="Const">
+          <Value><![CDATA[true]]></Value>
+        </AllowLassoFilterOverride>
+        <EsriCameraRefresh use="false"/>
+      </EsriRefreshConfiguration>
+      <GeoMapRefreshConfiguration>
+        <AllowLassoFilterOverride valueType="Const">
+          <Value><![CDATA[true]]></Value>
+        </AllowLassoFilterOverride>
+        <GeoMapCameraRefresh use="false"/>
+      </GeoMapRefreshConfiguration>
+    </RefreshConfiguration>
+    <DataFilter>
+      <DefaultDataFilterCriteria>
+        <ApplyByDefault valueType="Const">
+          <Value><![CDATA[true]]></Value>
+        </ApplyByDefault>
+      </DefaultDataFilterCriteria>
+    </DataFilter>
+  </DataFilterWindow>
+  <TimeFilterWindow Id="businessview_1_timefilter">
+    <WindowTitle valueType="Const">
+      <Value><![CDATA[Time Filter]]></Value>
+    </WindowTitle>
+    <ShowBreadcrumbsInTitle valueType="Const">
+      <Value><![CDATA[true]]></Value>
+    </ShowBreadcrumbsInTitle>
+    <HideFromBusinessViewSubMenu valueType="Const">
+      <Value><![CDATA[false]]></Value>
+    </HideFromBusinessViewSubMenu>
+    <IsLoadByDefault valueType="Const">
+      <Value><![CDATA[false]]></Value>
+    </IsLoadByDefault>
+    <WindowPlugin>
+      <ComponentPlugin>
+        <Name valueType="Const">
+          <Value><![CDATA[siViewerTimeFilter]]></Value>
+        </Name>
+        <JSFile valueType="Const">
+          <Value>timeFilter/com.spacetimeinsight.viewer.ui.timeFilter</Value>
+        </JSFile>
+      </ComponentPlugin>
+      <ToolbarPlugin>
+        <Name valueType="Const">
+          <Value><![CDATA[siViewerWindowToolBar]]></Value>
+        </Name>
+        <JSFile valueType="Const">
+          <Value>common/com.spacetimeinsight.viewer.ui.windowToolBar</Value>
+        </JSFile>
+      </ToolbarPlugin>
+      <FooterPlugin>
+        <Name valueType="Const">
+          <Value><![CDATA[siViewerFooter]]></Value>
+        </Name>
+        <JSFile valueType="Const">
+          <Value>common/com.spacetimeinsight.viewer.ui.footer</Value>
+        </JSFile>
+      </FooterPlugin>
+    </WindowPlugin>
+    <RefreshConfiguration>
+      <EsriRefreshConfiguration>
+        <AllowLassoFilterOverride valueType="Const">
+          <Value><![CDATA[true]]></Value>
+        </AllowLassoFilterOverride>
+        <EsriCameraRefresh use="false"/>
+      </EsriRefreshConfiguration>
+      <GeoMapRefreshConfiguration>
+        <AllowLassoFilterOverride valueType="Const">
+          <Value><![CDATA[true]]></Value>
+        </AllowLassoFilterOverride>
+        <GeoMapCameraRefresh use="false"/>
+      </GeoMapRefreshConfiguration>
+    </RefreshConfiguration>
+    <TimeFilter>
+      <UseDefaultTimeFilters valueType="Const">
+        <Value><![CDATA[true]]></Value>
+      </UseDefaultTimeFilters>
+      <DefaultTimeRange use="false">
+        <ApplyByDefault valueType="Const">
+          <Value><![CDATA[true]]></Value>
+        </ApplyByDefault>
+      </DefaultTimeRange>
+    </TimeFilter>
+  </TimeFilterWindow>
+</BVMRoot>
